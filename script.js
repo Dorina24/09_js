@@ -14,7 +14,7 @@ let userName = `Andra`;     //declarare + atribuire valoare variabilei (let) use
 console.log(`Name: `)       //afiseaza textul: "Name: "
 console.log(userName);      //afiseaza pe urmatorul rand userName
 
-//OPERATORI  DATE  NUMERICE
+//OPERATORI  DATE  NUMERICE__________________
 
 let firstNumber = 10;
 firstNumber = 12;   
@@ -41,17 +41,46 @@ console.log(`Rezultatul impartirii lui ${numberC} la ${numberD} este ${divisionR
 let moduloResult = numberC % numberD;       // RESTUL IMPARTIRII
 console.log(moduloResult);                   // afisare rest
 
-// Numere de tip NUMBER
+let checkedNumber = 21;                   // VERIFICARE NUMAR PAR/IMPAR
+let remainder = checkedNumber % 2;        // remainder = rest; daca un nr se imparte perfect la 2 este par
+let isEven = remainder === 0;              // daca restul este verificat si are valoarea zero, inseamna ca nr este par
+console.log(`Number ${checkedNumber} is even: ${isEven}.`);
+
+// Numere de tip NUMBER______________________
 
 console.log(Number.MAX_SAFE_INTEGER);       // cel mai mare numar de tip NUMBER
 console.log(Number.MIN_SAFE_INTEGER);       // cel mai mic numar de tip NUMBER
 
-// Numere de tip BigInt
+// Numere de tip BigInt _____________________
 
 let bigIntNumber = 1265267238276763482n;
 console.log(`BigInt value is: ${bigIntNumber}.`);
 
+// STRING____________________________________
 
+const myName = 'Andra Eusei';       //AFISAREA PRIMULUI CARACTER DIN STRING
+const firstCharInName = myName[0];          // [0] identifica caracterul cu indexul O (primul caracter);
+console.log(`Primul caracter din sirul '${myName}' este ${firstCharInName}.`);   //afiseaza primul caracter din sir; 
 
+const myNameLength = myName.length;  // LUNGIMEA sirului de caractere calculata prin functia length
+console.log(`Lungimea sirului de caractere este ${myNameLength}.`); 
+                                           
+                                    //AFISAREA ULTIMUL CARACTER DIN SIR       
+let lastCharIndex =myNameLength-1;         //calculam care este ultimul index din sirul nostru (care este intotdeauna cu lungimea -1 )
+let lastChar = myName[lastCharIndex];      //accesam caracterul de la indexul calculat
+console.log(`Ultimul caracter din sir este: '${lastChar}'.`);
 
+let firstName = 'Andra';            
+let lastName = 'Eusei';
+let separator = ' ';
+let fullName = firstName + separator + lastName;     // ADUNARE siruri de caractere 
+console.log(`Numele meu complet este ${fullName}.`); 
 
+let upperCaseName = fullName.toUpperCase();          // converteste literele in MAJUSCULE
+console.log(upperCaseName);
+
+let lowerCaseName = fullName.toLowerCase();         // converteste literele in MINUSCULE
+console.log(lowerCaseName);
+
+let substringResult = firstName.substring(1,4);      // afiseaza sirul fara primul si fara ultimul caracter (din ANDRA)
+console.log(substringResult)
