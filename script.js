@@ -107,3 +107,44 @@ console.log(`x=`, x);      //concatenare de stringuri
 x++;                       //INCREMENTARE CU +1
 console.log(`x=`, x);
 
+// OPERATORI  DE  COMPARATIE_____________________________
+
+let value1 = 22;
+let value2 = 22;
+let value3 = 23;
+let value4 = '22';
+           //comparator de EGALITATE
+let firstCompareResult = value1 == value2;
+console.log(`${value1} == ${value2} => ${firstCompareResult}`);
+
+let secondCompareResult = value1 == value3;
+console.log(`${value1} == ${value3} => ${secondCompareResult}`);
+
+let stringAndNumberEquality = value1 == value4;
+console.log(`${value1} == ${value4} => ${stringAndNumberEquality}`);
+
+           // comparator de EGALITATE STRICTA
+let strictEqualCompare = value1 === value4;
+console.log(`${value1} === ${value4} => ${strictEqualCompare} pentru ca au aceesi valoare, dar sunt tipuri de date diferite`);
+
+let strictEqualCompareNumbers = value1 === value2;
+console.log(`${value1} === ${value2} => ${strictEqualCompareNumbers} pentru ca au aceeasi valoare si sunt acelasi tip de date`);
+
+            // comparatorul MAI MIC, MAI MIC SAU EGAL (<=)
+let num1 = 5;
+let num2 = 6;
+let num3 = 5;
+let lessThanComparison = num1 < num2;
+console.log(`${num1} < ${num2} => ${lessThanComparison}`);
+
+let lessThanComparison2 = num2<num1;
+console.log(`${num2} < ${num1} => ${lessThanComparison2}`);
+
+let lessOrEqualComparison = num1 <= num2;
+console.log(`${num1} <= ${num2} => ${lessOrEqualComparison}`);
+
+let lessOrEqualComparison2 = num1 <= num3;
+console.log(`${num1} <= ${num3} => ${lessOrEqualComparison}`);
+
+
+                      
