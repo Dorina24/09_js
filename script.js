@@ -150,20 +150,32 @@ console.log(`${num1} <= ${num3} => ${lessOrEqualComparison}`);
 
 let trueValue = true;
 let falseValue = false;
-            // "SI" LOGIC
+            // "SI" LOGIC :   &&
 let logicalAndResult = trueValue && falseValue;            
 console.log(`${trueValue} && ${falseValue} => ${logicalAndResult}`);
-let logicalAndResult2 = falseValue && falseValue;
-console.log(`${falseValue} && ${falseValue} => ${logicalAndResult2}`);
-let logicalAndResult3 = trueValue && trueValue;
-console.log(`${trueValue} && ${trueValue} => ${logicalAndResult3}`);
 
-            //"SAU" LOGIC
+logicalAndResult = falseValue && falseValue;
+console.log(`${falseValue} && ${falseValue} => ${logicalAndResult}`);
+
+logicalAndResult = trueValue && trueValue;
+console.log(`${trueValue} && ${trueValue} => ${logicalAndResult}`);
+
+            //"SAU" LOGIC :   ||
 let logicalOrResult = trueValue || falseValue;
 console.log(`${trueValue} || ${falseValue} => ${logicalOrResult}`);
 
-let logicalOrResult2 = falseValue || falseValue;
-console.log(`${falseValue} && ${falseValue} => ${logicalAndResul2t}`);
+logicalOrResult = falseValue || falseValue;
+console.log(`${falseValue} || ${falseValue} => ${logicalAndResult}`);
+
+logicalOrResult = trueValue || trueValue;
+console.log(`${trueValue} || ${trueValue} => ${logicalAndResult}`);
+
+            // NEGAREA LOGICA:   !
+let notTrueValue = !trueValue;
+let notFalseValue = !falseValue;
+console.log(`!${trueValue} => ${notTrueValue}`);
+console.log(`!${falseValue} => ${notFalseValue}`);
+
 
 
 
