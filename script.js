@@ -41,6 +41,17 @@ console.log(`Rezultatul impartirii lui ${numberC} la ${numberD} este ${divisionR
 let moduloResult = numberC % numberD;       // RESTUL IMPARTIRII
 console.log(moduloResult);                   // afisare rest
 
+// Numere de tip NUMBER
+
+console.log(Number.MAX_SAFE_INTEGER);       // cel mai mare numar de tip NUMBER
+console.log(Number.MIN_SAFE_INTEGER);       // cel mai mic numar de tip NUMBER
+
+// Numere de tip BigInt
+
+let bigIntNumber = 1265267238276763482n;
+console.log(`BigInt value is: ${bigIntNumber}.`);
+
+
 
 
 
