@@ -83,4 +83,15 @@ let lowerCaseName = fullName.toLowerCase();         // converteste literele in M
 console.log(lowerCaseName);
 
 let substringResult = firstName.substring(1,4);      // afiseaza sirul fara primul si fara ultimul caracter (din ANDRA)
-console.log(substringResult)
+console.log(substringResult);
+
+// VALORI BOOLEENE_________________________________
+
+let isAdult = true;    // cream o variabila care contine date booleene cu valoarea true
+let isOld = false;     // am creat o noua valoarea booleena care are valoarea false;
+console.log(`isAdult = ${isAdult}`);
+console.log(`isOld = ${isOld}`);
+
+
+ 
+
