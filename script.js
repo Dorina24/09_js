@@ -92,6 +92,18 @@ let isOld = false;     // am creat o noua valoarea booleena care are valoarea fa
 console.log(`isAdult = ${isAdult}`);
 console.log(`isOld = ${isOld}`);
 
+// DATE  NULL  SAU  UNDEFINED_______________________
 
- 
+let nullValue=null;
+console.log(`nullValue = ${nullValue}`);
+
+let notInitialized;            
+console.log(`notInitialized = ${notInitialized}`);
+
+// OPERATORI  DE  ATRIBUIRE____________________________
+
+let x=10;                  
+console.log(`x=`, x);      //concatenare de stringuri
+x++;                       //INCREMENTARE CU +1
+console.log(`x=`, x);
 
